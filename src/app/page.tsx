@@ -16,7 +16,7 @@ export default function Home() {
 
       <Navbar />
 
-      <section className="relative flex flex-row items-center w-full min-h-0 lg:flex-1" aria-labelledby="hero-section-wrapper">
+      <section className="relative flex flex-row items-center w-full min-h-0" aria-labelledby="hero-section-wrapper">
         <div className="hidden lg:block h-full mx-auto z-20" aria-label="hero-image">
           <Image
             src="/img-hero.svg"
@@ -29,7 +29,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative mx-auto lg:-ml-[35%] lg:-ml-[20%] lg:-ml-[10%] flex flex-col items-center w-full max-w-[560px] min-w-[300px]" aria-labelledby="hero-section-content-wrapper">
+        <div className="relative mt-24 mx-auto lg:mt-12 lg:-ml-[35%] flex flex-col items-center w-full max-w-[560px] min-w-[300px]" aria-labelledby="hero-section-content-wrapper">
           <Card>
             <h1 id="hero-heading" className="text-[1.6rem] lg:text-6xl font-black text-[#23375F] mb-6 leading-tight">
               <span className="block lg:hidden ">Remarkable new journeys on every road</span>
