@@ -54,6 +54,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('/fonts/SofiaPro-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
 
 
 body {
