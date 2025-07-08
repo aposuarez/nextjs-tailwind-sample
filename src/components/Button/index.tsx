@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { ReactNode } from "react";
+import { ButtonVariants } from "@/constants/types";
 
 interface ButtonProps {
     children: ReactNode,
