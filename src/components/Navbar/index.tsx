@@ -17,10 +17,10 @@ export function Navbar() {
   }
 
   return (
-    <nav className="relative flex items-center w-full mt-16 sm:mt-10 justify-between bg-white rounded-[20px] shadow-2xl relative z-20 pt-[13px] pb-[11px] pl-[26px] pr-[22px] lg:py-[14px] lg:pl-[35px] lg:pr-[50px]">
+    <nav className="z-20 relative flex items-center w-full mt-16 lg:mt-10 justify-between bg-white rounded-[20px] shadow-2xl pt-[13px] pb-[11px] pl-[26px] pr-[22px] lg:py-[14px] lg:pl-[35px] lg:pr-[50px]">
       {/* Hamburger (mobile only, left) */}
       <button
-        className="sm:hidden mr-auto"
+        className="lg:hidden mr-auto"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         aria-label="Open menu"
       >
@@ -29,7 +29,7 @@ export function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="sm:hidden absolute top-17 left-0 w-48 bg-white rounded-xl shadow-lg p-4 flex flex-col space-y-3 text-sm z-30">
+        <div className="lg:hidden absolute top-17 left-0 w-48 bg-white rounded-xl shadow-lg p-4 flex flex-col space-y-3 text-sm z-30">
           {menuItems.map((item) => (
             <a
               key={item}
@@ -43,12 +43,12 @@ export function Navbar() {
       )}
 
       {/* Logo (centered on mobile, left on desktop) */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 sm:static sm:translate-x-0 sm:translate-y-0 sm:flex items-center">
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:static lg:translate-x-0 lg:translate-y-0 lg:flex items-center">
         <Image src="/ic-brand.svg" alt="topspeed logo" width={102} height={30} />
       </div>
 
       {/* Desktop Menu (centered absolutely on desktop) */}
-      <div className="hidden sm:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-x-6 items-center">
+      <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-x-6 items-center">
         {menuItems.map((item) => (
           <a
             key={item}
@@ -63,7 +63,7 @@ export function Navbar() {
       {/* Login button (always right) */}
       <Button
         variant="secondary"
-        className="ml-auto text-[14px] sm:text-base font-normal"
+        className="ml-auto text-[14px] lg:text-base font-normal"
         leftIcon="/ic-user.svg"
         leftIconWidth={8}
         leftIconHeight={13}
