@@ -36,10 +36,6 @@ const Button : React.FC<ButtonProps>  = ({
         ? "w-full bg-[#FD8121] text-white font-bold rounded-full px-8 py-3 text-lg shadow-[0_0_10px_5px_rgba(255,140,0,0.40)]"
         : "bg-white text-[#253451] border border-gray-300 rounded-full pl-[13px] pr-[11px] py-[5px] text-sm shadow-none hover:border-orange hover:text-orange";
 
-        const handleVisitNow =()=> {
-            console.log("John Michael Suarez");
-          };
-
     return (
         <button {...rest} className={`${baseStyle} ${variantStyle} ${className}`} onClick={onClick}>
             <span className="flex items-center justify-center gap-2">
